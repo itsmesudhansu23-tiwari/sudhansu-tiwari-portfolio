@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sudhansu Tiwari — MIS and Assessment Operations professional.">
+  <title>Sudhansu Tiwari | Portfolio</title>
+  <style>
+    :root{--navy:#10294b;--blue:#2457a7;--sky:#eaf1fb;--ink:#182235;--muted:#64748b;--white:#fff;--line:#dbe4f0}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f7f9fc;line-height:1.65}
+    a{color:inherit}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:70px}
+    .brand{font-weight:800;color:var(--navy);letter-spacing:.2px;text-decoration:none}
+    .navlinks{display:flex;gap:22px;flex-wrap:wrap}
+    .navlinks a{text-decoration:none;color:#42516a;font-size:.94rem;font-weight:600}
+    .navlinks a:hover{color:var(--blue)}
+    .hero{padding:76px 0 68px;background:linear-gradient(135deg,#edf3fc 0%,#fff 62%,#e7eef9 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:54px}
+    .eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.6px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.08;letter-spacing:-1.8px;color:var(--navy);margin:12px 0 16px}
+    .lead{font-size:1.14rem;color:#46556d;max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:11px;font-weight:750;text-decoration:none;border:1px solid var(--blue);transition:.2s}
+    .btn.primary{background:var(--blue);color:white}.btn.primary:hover{background:#183f80}
+    .btn.secondary{background:white;color:var(--blue)}.btn.secondary:hover{background:var(--sky)}
+    .portrait-shell{justify-self:center;padding:10px;background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 20px 50px #1b376018;transform:rotate(2deg)}
+    .portrait{display:block;width:min(300px,62vw);aspect-ratio:1/1;object-fit:cover;border-radius:20px;transform:rotate(-2deg)}
+    .quickfacts{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+    .pill{background:#fff;border:1px solid var(--line);padding:7px 12px;border-radius:999px;color:#3b4a62;font-size:.88rem}
+    section{padding:66px 0}
+    .section-head{margin-bottom:26px}
+    .section-head h2{font-size:clamp(1.7rem,3vw,2.35rem);margin:0;color:var(--navy);letter-spacing:-.5px}
+    .section-head p{color:var(--muted);margin:8px 0 0}
+    .about-card,.job,.project,.contact-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 8px 25px #20395d08}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:9px 13px;border-radius:10px;background:var(--sky);color:#214579;font-weight:650;font-size:.93rem}
+    .timeline{display:grid;gap:16px}
+    .job-top{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .job h3,.project h3{margin:0;color:var(--navy);font-size:1.13rem}
+    .company{font-weight:700;color:#45556e;margin-top:4px}
+    .date{font-size:.88rem;color:var(--blue);font-weight:750;background:var(--sky);border-radius:999px;padding:5px 10px;height:max-content}
+    ul{padding-left:20px;margin-bottom:0;color:#4a586d}
+    li{margin:6px 0}
+    .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .project p{color:#4a586d;margin-bottom:0}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .contact-card small{display:block;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.8px}
+    .contact-card a,.contact-card span{display:block;margin-top:5px;text-decoration:none;overflow-wrap:anywhere;font-weight:650;color:var(--navy)}
+    footer{padding:25px 0;background:var(--navy);color:#d8e3f3;text-align:center;font-size:.9rem}
+    .note{font-size:.88rem;color:var(--muted);margin-top:18px}
+    @media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:35px}.portrait-shell{grid-row:1}.hero{padding:48px 0}.navlinks{gap:12px}.navlinks a{font-size:.84rem}.project-grid,.contact-grid{grid-template-columns:1fr}section{padding:48px 0}}
+    @media(max-width:480px){nav{align-items:flex-start;padding:13px 0;flex-direction:column}.navlinks{gap:14px}.actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">ST · Portfolio</a>
+    <div class="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">MIS · Assessment Operations · Reporting</div>
+        <h1>Sudhansu<br>Tiwari</h1>
+        <p class="lead">MIS and Assessment Operations professional experienced in government skill-development programs, assessment coordination, portal operations, record management, and project reporting.</p>
+        <div class="actions">
+          <a class="btn primary" href="assets/Sudhansu_Tiwari_CV.pdf" download="Sudhansu_Tiwari_CV.pdf">Download CV ↓</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="quickfacts">
+          <span class="pill">MIS Reporting</span><span class="pill">Government Portals</span><span class="pill">Assessment Coordination</span>
+        </div>
+      </div>
+      <div class="portrait-shell">
+        <img class="portrait" src="assets/profile.png" alt="Profile photo of Sudhansu Tiwari">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><h2>About Me</h2><p>Reliable reporting, organized records, and smooth project coordination.</p></div>
+      <div class="about-card">
+        I work across MIS management and assessment operations, supporting skill-development projects through accurate candidate and batch records, assessment scheduling, government portal updates, assessor coordination, payment tracking, and periodic progress reporting. I aim to contribute to an MIS Executive or MIS Coordinator role where data accuracy and timely operations matter.
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><h2>Core Skills</h2><p>Operational and technical skills relevant to MIS and coordination roles.</p></div>
+      <div class="skills">
+        <span class="skill">MIS Management & Reporting</span><span class="skill">Data Entry & Record Maintenance</span>
+        <span class="skill">Assessment Scheduling</span><span class="skill">Government Portal Operations</span>
+        <span class="skill">Candidate & Batch Records</span><span class="skill">Project Progress Reporting</span>
+        <span class="skill">Assessor Allocation</span><span class="skill">Payment Tracking</span>
+        <span class="skill">Stakeholder Coordination</span><span class="skill">Training-Centre Operations</span>
+        <span class="skill">IT Support</span><span class="skill">Hardware & Software Troubleshooting</span>
+        <span class="skill">Microsoft Office</span><span class="skill">Google Sheets</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><h2>Work Experience</h2><p>Professional experience in assessment operations, MIS, and IT training.</p></div>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-top"><div><h3>Assessment Executive</h3><div class="company">IRIS Corporate Solutions Pvt Ltd</div></div><span class="date">Dec 2024 – Present</span></div>
+          <ul>
+            <li>Coordinate assessments for government and NSDC skill-development programs across multiple sectors.</li>
+            <li>Allocate certified assessors and coordinate schedules, logistics, and candidate readiness with training partners.</li>
+            <li>Maintain MIS records for batches, assessor allocation, assessment evidence, and result uploads.</li>
+            <li>Track assessor payments, completion status, approvals, and disbursements.</li>
+            <li>Coordinate Training of Assessor nominations and registrations; upload results and evidence to SIDH portals.</li>
+            <li>Prepare periodic MIS reports and project progress updates for management review.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="job-top"><div><h3>MIS Cum Center Manager</h3><div class="company">Navjyoti Global Solutions Pvt Ltd</div></div><span class="date">May 2023 – Nov 2024</span></div>
+          <ul>
+            <li>Managed training-centre activities for SCPwD and CSR-funded skill-development projects.</li>
+            <li>Coordinated batches, attendance, training schedules, trainer activities, and candidate records.</li>
+            <li>Maintained candidate databases and project documentation; prepared MIS and progress reports.</li>
+            <li>Communicated project progress and operational updates to stakeholders.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="job-top"><div><h3>IT Trainer</h3><div class="company">CPIT Edutech – DDUGKY</div></div><span class="date">Nov 2022 – Feb 2023</span></div>
+          <ul>
+            <li>Delivered IT training using classroom sessions, practical exercises, workshops, and presentations.</li>
+            <li>Supported candidate registration and data entry through Kaushal Panji and Kaushal Bharat.</li>
+            <li>Provided basic hardware/software troubleshooting and supported training-centre IT equipment.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="job-top"><div><h3>IT Trainer</h3><div class="company">CUYDT – DDUGKY</div></div><span class="date">Oct 2021 – Oct 2022</span></div>
+          <ul><li>Prepared teaching materials and presentations and conducted group activities, workshops, and discussions.</li></ul>
+        </article>
+        <article class="job">
+          <div class="job-top"><div><h3>Computer Trainer</h3><div class="company">KYP (Kushal Yuva Program)</div></div><span class="date">Jan 2020 – Aug 2020</span></div>
+          <ul><li>Planned lessons and delivered computer training, including desktop applications and Microsoft Office.</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><h2>Project Highlights</h2><p>Examples of the work and operations supported.</p></div>
+      <div class="project-grid">
+        <article class="project"><h3>Skill Development Operations</h3><p>Coordinated training batches, attendance, schedules, trainer activities, and project records for SCPwD and CSR-funded initiatives.</p></article>
+        <article class="project"><h3>Government Portal & MIS Support</h3><p>Supported candidate registration, data entry, record updates, and project information using portals and systems including SIDH, PMS, PM Daksh, Kaushal Panji, Kaushal Bharat, and Kaushal Ganga.</p></article>
+        <article class="project"><h3>Assessment Coordination</h3><p>Supported assessor allocation, assessment scheduling, result uploads, evidence maintenance, and coordination with training partners and Sector Skill Councils.</p></article>
+        <article class="project"><h3>IT Training & Technical Support</h3><p>Delivered practical IT training and helped resolve basic computer hardware and software issues at training centres.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><h2>Contact</h2><p>Open to MIS Executive, MIS Coordinator, and reporting opportunities.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><small>Email</small><a href="mailto:itsmesudhansu23@gmail.com">itsmesudhansu23@gmail.com</a></div>
+        <div class="contact-card"><small>Phone</small><a href="tel:+916201477648">+91 62014 77648</a></div>
+        <div class="contact-card"><small>Location</small><span>Gurugram, Haryana</span></div>
+      </div>
+      <p class="note">For privacy, only publish contact details you are comfortable sharing publicly. This site intentionally does not include education details or a certificates section.</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Sudhansu Tiwari · Portfolio</div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
